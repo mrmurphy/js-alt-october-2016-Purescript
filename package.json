@@ -1,0 +1,22 @@
+{
+  "name": "contact-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pulp build --to app.js",
+    "dev:serve": "browser-sync start -s --port 12346 --files **/*.js,**/*.css,**/*.html",
+    "start": "npm run -s build && npm run -s dev:serve & pscid -p 1339",
+    "postinstall": "bower install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.17.0",
+    "pscid": "1.11.0",
+    "pulp": "9.0.1",
+    "purescript": "0.9.3",
+    "purescript-psa": "0.3.9",
+    "xhr2": "0.1.3"
+  }
+}
